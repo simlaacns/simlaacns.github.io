@@ -72,7 +72,7 @@
 				<ul>
 					<li><b>17:30 - 17:40</b>: Closing Remarks</li>
 				</ul> --> 
-			<table style="width:100%; border-collapse:collapse; text-align:left;">
+			<!-- <table style="width:100%; border-collapse:collapse; text-align:left;">
 				<thead>
 					<tr style="background-color:#4CAF50; color:white;">
 						<th style="width:12%;">Time</th>
@@ -183,7 +183,164 @@
 						<td colspan="2" style="text-align:center;"><b>Closing Remarks</b></td>
 					</tr>
 				</tbody>
-			</table> 
+			</table>  -->
+			<style>
+			.program-table {
+				width: 100%;
+				border-collapse: collapse;
+				table-layout: fixed;
+				font-size: 14px;
+			}
+
+			.program-table th,
+			.program-table td {
+				border: 1px solid #bdbdbd;
+				padding: 10px;
+				vertical-align: top;
+				word-wrap: break-word;
+			}
+
+			.program-table th {
+				background-color: #4CAF50;
+				color: white;
+				text-align: left;
+			}
+
+			.paper-row {
+				background-color: #e8f5e9;
+			}
+
+			.break-row {
+				background-color: #e0e0e0;
+			}
+
+			.center-cell {
+				text-align: center;
+			}
+			</style>
+
+			<table class="program-table">
+
+				<colgroup>
+					<col style="width:12%">
+					<col style="width:53%">
+					<col style="width:35%">
+				</colgroup>
+
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Paper Title</th>
+						<th>Authors</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<tr class="paper-row">
+						<td>09:00 - 09:10</td>
+						<td colspan="2" class="center-cell"><b>Opening</b></td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>09:10 - 10:10</td>
+						<td colspan="2" class="center-cell">
+							<b>Keynote 1 by Prof. Bo Luo</b><br>
+							<i>Securing AI, Abusing AI, Trusting AI: Three Views of Security and Privacy in Machine Learning Models and Applications</i>
+						</td>
+					</tr>
+
+					<tr class="break-row">
+						<td>10:10 - 11:00</td>
+						<td colspan="2" class="center-cell">☕ Coffee Break</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>11:00 - 11:15</td>
+						<td>ACEraser: Environment Forgetting in Actor-Critic Reinforcement Learning through Influence Function</td>
+						<td>Joshua Maccoby and Wendy Hui Wang</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>11:15 - 11:30</td>
+						<td>Privacy-Preserving Fairness Evaluation using Fully Homomorphic Encryption</td>
+						<td>Divyesh Saglani, Imtiyazuddin Shaik, Rajan M. A., Srividhya Sankepally and Bharat Ratnala</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>11:30 - 11:45</td>
+						<td>Filtering Adversarial Examples in Binary Function Similarity Models</td>
+						<td>Anna Paola Giancaspro, Gianluca Capozzi and Giuseppe Antonio Di Luna</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>11:45 - 12:00</td>
+						<td>Street-Legal Physical-World Adversarial Rim for License Plates</td>
+						<td>Nikhil Kalidasu and Sahana Ganapathy</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>12:00 - 12:15</td>
+						<td>Can Large Language Models Redefine Malware Evasion? A Study of Functionality-Preserving Adversarial Assembly</td>
+						<td>Md Mashrur Arifin, Brodie Abrew, Devyn Hubbs, Ahmed Saif Muntaseer and Jyh-Haw Yeh</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>12:15 - 12:30</td>
+						<td>Detection and Explanation of PowerShell Malware with Large Language Models</td>
+						<td>Meng Wang, Emma Topolovec, Beatrice Arana, Naga Venkata Prasanna Sai Gupta Chimakurthy Kuladeep, Zhaohan Xi, Guanhua Yan, Xiaokui Shu, Scott Stoller and Ping Yang</td>
+					</tr>
+
+					<tr class="break-row">
+						<td>12:30 - 14:00</td>
+						<td colspan="2" class="center-cell">🍽️ Lunch Break</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>14:00 - 15:00</td>
+						<td colspan="2" class="center-cell">
+							<b>Keynote 2 by A/Prof. Neil Gong</b><br>
+							<i>Prompt Injection in LLM Agents</i>
+						</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>15:00 - 15:15</td>
+						<td>Membership Inference Attacks Against Video Large Language Models</td>
+						<td>Wei Song, Yuxin Cao, Ziqi Ding, Yi Liu, Gelei Deng and Yuekang Li</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>15:15 - 15:30</td>
+						<td>Variational Feature Compression for Model-Specific Representations</td>
+						<td>Zinan Guo, Zihan Wang, Chuan Yan, Liuhuo Wan, Ethan Ma and Guangdong Bai</td>
+					</tr>
+
+					<tr class="break-row">
+						<td>15:30 - 16:00</td>
+						<td colspan="2" class="center-cell">☕ Coffee Break</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>16:00 - 16:15</td>
+						<td>SENTINEL: Self-Supervised Continual Anomaly Detection for Securing LLM Agent Systems</td>
+						<td>Jake Garnier</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>16:15 - 16:30</td>
+						<td>AI Slop and Hallucinations in Vulnerability Assessment: A Survey on Reasoning Failures and Trustworthy Mitigation</td>
+						<td>Junchen Ding, Jialiang Dong, Yichen Zhu, Yi Liu, Gelei Deng, Willy Susilo, Siqi Ma and Yuekang Li</td>
+					</tr>
+
+					<tr class="paper-row">
+						<td>17:30 - 17:40</td>
+						<td colspan="2" class="center-cell"><b>Closing Remarks</b></td>
+					</tr>
+
+				</tbody>
+
+			</table>
 
 				<p><strong>Presentation Format:</strong></p>
 				<ul>
