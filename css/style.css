@@ -27,15 +27,17 @@ em{
 }
 
 #navbar{
-	height:45px;
+	height:auto;
 	padding-top:1px;
 }
 
 #navbar ul{
 	padding:0;
 	list-style:none;
-	justify-content:space-between;
 	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	gap:8px 18px;
 }
 
 #navbar li{
@@ -45,7 +47,7 @@ em{
 
 #navbar a{
 	text-decoration:none;
-	font-size:20px;
+	font-size:18px;
 }
 
 .highlight{
@@ -56,4 +58,3 @@ em{
 	font-size:12px;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
