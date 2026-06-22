@@ -2,6 +2,7 @@
 
 <html>
 	<head>
+		<meta charset="UTF-8">
 		<title>SiMLA2026 Workshop</title>
 		<meta name="description" content="Homepage of SiMLA workshop" />
 		<meta name="keyword" content="Security in Machine Learning and its Applications">
@@ -189,6 +190,7 @@
 			<style>
 			.program-table {
 				width: 100%;
+				min-width: 600px;
 				border-collapse: collapse;
 				table-layout: fixed;
 				font-size: 14px;
@@ -208,147 +210,302 @@
 				text-align: left;
 			}
 
+			.program-table th:first-child,
+			.paper-row td:first-child,
+			.break-row td:first-child {
+				white-space: nowrap;
+			}
+
 			.paper-row {
 				background-color: #e8f5e9;
+			}
+
+			.program-title {
+				display: block;
+				font-weight: bold;
+				color: #333333;
+			}
+
+			.program-speakers {
+				display: block;
+				margin-top: 4px;
+				color: #5f5f5f;
+				font-size: 13px;
+				line-height: 1.45;
 			}
 
 			.break-row {
 				background-color: #e0e0e0;
 			}
 
+			.session-row td {
+				background-color: #2f6f3e;
+				color: #ffffff;
+				padding: 12px 14px;
+			}
+
+			.session-header {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				gap: 12px 24px;
+				flex-wrap: wrap;
+			}
+
+			.session-title {
+				font-size: 16px;
+				font-weight: bold;
+			}
+
+			.session-details {
+				font-size: 14px;
+			}
+
+			.online-meeting-link {
+				color: #ffffff;
+				font-weight: bold;
+				text-decoration: underline;
+			}
+
 			.center-cell {
 				text-align: center;
+			}
+
+			.break-icon {
+				display: inline-block;
+				font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+				font-style: normal;
+				line-height: 1;
+			}
+
+			.program-info-grid {
+				display: grid;
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 18px;
+				margin: 22px 0;
+			}
+
+			.program-info-card {
+				background-color: #ffffff;
+				border: 1px solid #d5d5d5;
+				border-top: 4px solid #2f6f3e;
+				border-radius: 6px;
+				padding: 16px 18px;
+			}
+
+			.program-info-card h3 {
+				margin: 0 0 10px;
+				color: #2f6f3e;
+				font-size: 18px;
+			}
+
+			.program-info-card ul {
+				margin: 0;
+				padding-left: 20px;
+			}
+
+			.meeting-details {
+				margin: 0;
+			}
+
+			.meeting-details dt {
+				font-weight: bold;
+				color: #333333;
+			}
+
+			.meeting-details dd {
+				margin: 0 0 8px;
+			}
+
+			.meeting-details dd:last-child {
+				margin-bottom: 0;
+			}
+
+			.meeting-join-link {
+				display: inline-block;
+				background-color: #4CAF50;
+				color: #ffffff;
+				font-weight: bold;
+				text-decoration: none;
+				padding: 7px 12px;
+				border-radius: 4px;
+			}
+
+			.meeting-join-link:hover,
+			.meeting-join-link:focus {
+				background-color: #2f6f3e;
+			}
+
+			@media (max-width: 720px) {
+				.program-info-grid {
+					grid-template-columns: 1fr;
+				}
 			}
 			</style>
 
 			<table class="program-table">
 
 				<colgroup>
-					<col style="width:12%">
-					<col style="width:48%">
-					<col style="width:40%">
+					<col style="width:18%">
+					<col style="width:82%">
 				</colgroup>
 
 				<thead>
 					<tr>
 						<th>Time</th>
-						<th>Paper Title</th>
-						<th>Authors</th>
+						<th>Program Details</th>
 					</tr>
 				</thead>
 
 				<tbody>
 
+					<tr class="session-row">
+						<td colspan="2">
+							<div class="session-header">
+								<span class="session-title">Session 1: Opening &amp; Keynote Session I</span>
+								<span class="session-details"><strong>Session Chairs:</strong> Leo Zhang &amp; Yifeng Zhang &nbsp;|&nbsp; <a class="online-meeting-link" href="https://teams.microsoft.com/meet/45439252201783?p=IxVMwl8qgrwWbSLXlR" target="_blank" rel="noopener noreferrer">Join Teams Meeting</a></span>
+							</div>
+						</td>
+					</tr>
+
 					<tr class="paper-row">
 						<td>09:00 - 09:10</td>
-						<td colspan="2" class="center-cell"><b>Opening</b></td>
+						<td class="center-cell"><strong class="program-title">Opening</strong></td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>09:10 - 10:10</td>
-						<td colspan="2" class="center-cell">
-							<b>Keynote 1 by Prof. Bo Luo</b><br>
-							<i>Securing AI, Abusing AI, Trusting AI: Three Views of Security and Privacy in Machine Learning Models and Applications</i>
+						<td class="center-cell">
+							<strong class="program-title">Keynote 1: Securing AI, Abusing AI, Trusting AI: Three Views of Security and Privacy in Machine Learning Models and Applications</strong>
+							<span class="program-speakers">Prof. Bo Luo</span>
 						</td>
 					</tr>
 
 					<tr class="break-row">
-						<td>10:10 - 11:00</td>
-						<td colspan="2" class="center-cell">☕ Coffee Break</td>
+						<td>10:15 - 10:45</td>
+						<td class="center-cell"><span class="break-icon" aria-hidden="true">&#9749;&#65039;</span> Coffee Break</td>
+					</tr>
+
+					<tr class="session-row">
+						<td colspan="2">
+							<div class="session-header">
+								<span class="session-title">Session 2: Technical Session I</span>
+								<span class="session-details"><strong>Session Chair:</strong> Jianying Zhou &nbsp;|&nbsp; <a class="online-meeting-link" href="https://teams.microsoft.com/meet/45439252201783?p=IxVMwl8qgrwWbSLXlR" target="_blank" rel="noopener noreferrer">Join Teams Meeting</a></span>
+							</div>
+						</td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>11:00 - 11:15</td>
-						<td>ACEraser: Environment Forgetting in Actor-Critic Reinforcement Learning through Influence Function</td>
-						<td>Joshua Maccoby and Wendy Hui Wang</td>
+						<td><strong class="program-title">ACEraser: Environment Forgetting in Actor-Critic Reinforcement Learning through Influence Function</strong><span class="program-speakers">Joshua Maccoby and Wendy Hui Wang</span></td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>11:15 - 11:30</td>
-						<td>Privacy-Preserving Fairness Evaluation using Fully Homomorphic Encryption</td>
-						<td>Divyesh Saglani, Imtiyazuddin Shaik, Rajan M. A., Srividhya Sankepally and Bharat Ratnala</td>
+						<td><strong class="program-title">Filtering Adversarial Examples in Binary Function Similarity Models</strong><span class="program-speakers">Anna Paola Giancaspro, Gianluca Capozzi and Giuseppe Antonio Di Luna</span></td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>11:30 - 11:45</td>
-						<td>Filtering Adversarial Examples in Binary Function Similarity Models</td>
-						<td>Anna Paola Giancaspro, Gianluca Capozzi and Giuseppe Antonio Di Luna</td>
+						<td><strong class="program-title">Street-Legal Physical-World Adversarial Rim for License Plates</strong><span class="program-speakers">Nikhil Kalidasu and Sahana Ganapathy</span></td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>11:45 - 12:00</td>
-						<td>Street-Legal Physical-World Adversarial Rim for License Plates</td>
-						<td>Nikhil Kalidasu and Sahana Ganapathy</td>
+						<td><strong class="program-title">Can Large Language Models Redefine Malware Evasion? A Study of Functionality-Preserving Adversarial Assembly</strong><span class="program-speakers">Md Mashrur Arifin, Brodie Abrew, Devyn Hubbs, Ahmed Saif Muntaseer and Jyh-Haw Yeh</span></td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>12:00 - 12:15</td>
-						<td>Can Large Language Models Redefine Malware Evasion? A Study of Functionality-Preserving Adversarial Assembly</td>
-						<td>Md Mashrur Arifin, Brodie Abrew, Devyn Hubbs, Ahmed Saif Muntaseer and Jyh-Haw Yeh</td>
-					</tr>
-
-					<tr class="paper-row">
-						<td>12:15 - 12:30</td>
-						<td>Detection and Explanation of PowerShell Malware with Large Language Models</td>
-						<td>Meng Wang, Emma Topolovec, Beatrice Arana, Naga Venkata Prasanna Sai Gupta Chimakurthy Kuladeep, Zhaohan Xi, Guanhua Yan, Xiaokui Shu, Scott Stoller and Ping Yang</td>
+						<td><strong class="program-title">Detection and Explanation of PowerShell Malware with Large Language Models</strong><span class="program-speakers">Meng Wang, Emma Topolovec, Beatrice Arana, Naga Venkata Prasanna Sai Gupta Chimakurthy Kuladeep, Zhaohan Xi, Guanhua Yan, Xiaokui Shu, Scott Stoller and Ping Yang</span></td>
 					</tr>
 
 					<tr class="break-row">
-						<td>12:30 - 14:00</td>
-						<td colspan="2" class="center-cell">🍽️ Lunch Break</td>
+						<td>12:15 - 14:00</td>
+						<td class="center-cell"><span class="break-icon" aria-hidden="true">&#127869;&#65039;</span> Lunch Break</td>
+					</tr>
+
+					<tr class="session-row">
+						<td colspan="2">
+							<div class="session-header">
+								<span class="session-title">Session 3: Keynote &amp; Technical Session II</span>
+								<span class="session-details"><strong>Session Chair:</strong> Leo Zhang &nbsp;|&nbsp; <a class="online-meeting-link" href="https://teams.microsoft.com/meet/45439252201783?p=IxVMwl8qgrwWbSLXlR" target="_blank" rel="noopener noreferrer">Join Teams Meeting</a></span>
+							</div>
+						</td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>14:00 - 15:00</td>
-						<td colspan="2" class="center-cell">
-							<b>Keynote 2 by A/Prof. Neil Gong</b><br>
-							<i>Prompt Injection in LLM Agents</i>
+						<td class="center-cell">
+							<strong class="program-title">Keynote 2: Prompt Injection in LLM Agents</strong>
+							<span class="program-speakers">A/Prof. Neil Gong</span>
 						</td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>15:00 - 15:15</td>
-						<td>Membership Inference Attacks Against Video Large Language Models</td>
-						<td>Wei Song, Yuxin Cao, Ziqi Ding, Yi Liu, Gelei Deng and Yuekang Li</td>
+						<td><strong class="program-title">Membership Inference Attacks Against Video Large Language Models</strong><span class="program-speakers">Wei Song, Yuxin Cao, Ziqi Ding, Yi Liu, Gelei Deng and Yuekang Li</span></td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>15:15 - 15:30</td>
-						<td>Variational Feature Compression for Model-Specific Representations</td>
-						<td>Zinan Guo, Zihan Wang, Chuan Yan, Liuhuo Wan, Ethan Ma and Guangdong Bai</td>
+						<td><strong class="program-title">Variational Feature Compression for Model-Specific Representations</strong><span class="program-speakers">Zinan Guo, Zihan Wang, Chuan Yan, Liuhuo Wan, Ethan Ma and Guangdong Bai</span></td>
 					</tr>
 
 					<tr class="break-row">
 						<td>15:30 - 16:00</td>
-						<td colspan="2" class="center-cell">☕ Coffee Break</td>
+						<td class="center-cell"><span class="break-icon" aria-hidden="true">&#9749;&#65039;</span> Coffee Break</td>
+					</tr>
+
+					<tr class="session-row">
+						<td colspan="2">
+							<div class="session-header">
+								<span class="session-title">Session 4: Technical Session III</span>
+								<span class="session-details"><strong>Session Chair:</strong> Fuyi Wang &nbsp;|&nbsp; <a class="online-meeting-link" href="https://teams.microsoft.com/meet/45439252201783?p=IxVMwl8qgrwWbSLXlR" target="_blank" rel="noopener noreferrer">Join Teams Meeting</a></span>
+							</div>
+						</td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>16:00 - 16:15</td>
-						<td>SENTINEL: Self-Supervised Continual Anomaly Detection for Securing LLM Agent Systems</td>
-						<td>Jake Garnier</td>
+						<td><strong class="program-title">SENTINEL: Self-Supervised Continual Anomaly Detection for Securing LLM Agent Systems</strong><span class="program-speakers">Jake Garnier</span></td>
 					</tr>
 
 					<tr class="paper-row">
 						<td>16:15 - 16:30</td>
-						<td>AI Slop and Hallucinations in Vulnerability Assessment: A Survey on Reasoning Failures and Trustworthy Mitigation</td>
-						<td>Junchen Ding, Jialiang Dong, Yichen Zhu, Yi Liu, Gelei Deng, Willy Susilo, Siqi Ma and Yuekang Li</td>
+						<td><strong class="program-title">AI Slop and Hallucinations in Vulnerability Assessment: A Survey on Reasoning Failures and Trustworthy Mitigation</strong><span class="program-speakers">Junchen Ding, Jialiang Dong, Yichen Zhu, Yi Liu, Gelei Deng, Willy Susilo, Siqi Ma and Yuekang Li</span></td>
 					</tr>
 
 					<tr class="paper-row">
-						<td>17:30 - 17:40</td>
-						<td colspan="2" class="center-cell"><b>Closing Remarks</b></td>
+						<td>16:30 - 16:45</td>
+						<td><strong class="program-title">Privacy-Preserving Fairness Evaluation using Fully Homomorphic Encryption</strong><span class="program-speakers">Divyesh Saglani, Imtiyazuddin Shaik, Rajan M. A., Srividhya Sankepally and Bharat Ratnala</span></td>
 					</tr>
 
 				</tbody>
 
 			</table>
 
-				<p><strong>Presentation Format:</strong></p>
-				<ul>
-					<li>Regular Paper: 12 minutes presentation + 3 minutes Q&amp;A</li>
-					<li>Keynote: 50 minutes presentation + 10 minutes Q&amp;A</li>
-				</ul>
+			<div class="program-info-grid">
+				<section class="program-info-card" aria-labelledby="presentation-format-heading">
+					<h3 id="presentation-format-heading">Presentation Format</h3>
+					<ul>
+						<li>Regular Paper: 12 minutes presentation + 3 minutes Q&amp;A</li>
+						<li>Keynote: 50 minutes presentation + 10 minutes Q&amp;A</li>
+					</ul>
+				</section>
+
+				<section class="program-info-card" aria-labelledby="teams-meeting-heading">
+					<h3 id="teams-meeting-heading">Microsoft Teams Meeting</h3>
+					<dl class="meeting-details">
+						<dt>Join</dt>
+						<dd><a class="meeting-join-link" href="https://teams.microsoft.com/meet/45439252201783?p=IxVMwl8qgrwWbSLXlR" target="_blank" rel="noopener noreferrer">Join Microsoft Teams Meeting</a></dd>
+						<dt>Meeting ID</dt>
+						<dd>454 392 522 017 83</dd>
+						<dt>Passcode</dt>
+						<dd>RD75rd37</dd>
+					</dl>
+				</section>
+			</div>
 			</section>
 
 

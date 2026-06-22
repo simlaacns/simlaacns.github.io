@@ -1,1 +1,12 @@
 simlaacns.github.io.code-workspace
+
+# macOS metadata
+.DS_Store
+
+# Local editor settings and workspace files
+.vscode/
+*.code-workspace
+
+# Local server/runtime files
+*.log
+*.pid
